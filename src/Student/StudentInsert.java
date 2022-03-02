@@ -8,7 +8,7 @@ public class StudentInsert {
 		// TODO Auto-generated method stub
 		String dbURL = "jdbc:mysql://localhost:3306/student";
 		String username = "root";
-		String password = "4399";
+		String password = "4939";
 		
 		try (Connection conn = DriverManager.getConnection(dbURL, username, password)) {
 			
@@ -16,9 +16,9 @@ public class StudentInsert {
 			
 			PreparedStatement statement = conn.prepareStatement(sql);
 			statement.setString(1, "1");
-			statement.setString(2, "Ankit");
-			statement.setString(3, "17/05/1999");
-			statement.setString(4, "10/02/2022");
+			statement.setString(2, "prachi");
+			statement.setString(3, "27/01/1999");
+			statement.setString(4, "24/04/2022");
 			
 			int rowsInserted = statement.executeUpdate();
 			if (rowsInserted > 0) {
